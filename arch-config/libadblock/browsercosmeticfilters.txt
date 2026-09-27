@@ -1,0 +1,89 @@
+[Adblock Plus 2.0]
+! Title: LibElectron Cosmetic Filters
+! Source: https://gitlab.com/linuxbombay/libelectron/libadblock/filters/-/raw/main/browsercosmeticfilters.txt
+! Phoenix cosmetic filter overrides
+! ABP/uBO syntax. Keep domain-specific selectors in this file, not in app code.
+
+! AOL
+aol.com##.m-games-overlay-main-right-rail-ads
+aol.com###m-games-overlay-main-right-rail-ads
+aol.com##.m-games-overlay-footer
+aol.com###m-games-overlay-footer
+aol.com##.m-games-overlay-separator
+aol.com###m-games-overlay-separator
+aol.com##.m-banner.m-banner--transition.m-banner--bannerAd
+aol.com##[style*="min-height:90px"][style*="min-width:728px"]
+aol.com##.em-module.col-span-full.\!mb-0
+aol.com##div[class^="m-gam__placeholder"]
+aol.com##div[class^="GameOverlay_rail__"]
+! YouTube
+youtube.com##ytd-ad-slot-renderer
+youtube.com##ytd-action-companion-ad-renderer
+youtube.com##ytd-companion-slot-renderer
+youtube.com##ytd-display-ad-renderer
+youtube.com##ytd-in-feed-ad-layout-renderer
+youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##ytd-video-masthead-ad-v3-renderer
+youtube.com###panels ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"]
+! Twitch
+twitch.tv##+js(twitch-videoad)
+! Hacker News filters
+thehackernews.com##.rocking.cf
+thehackernews.com##section.clear.okfix.bb-side-top
+thehackernews.com##div.dog_two.clear
+! EXT.to
+ext.to##div#modal
+! Genius in-lyrics and leaderboard ad containers
+genius.com##div[data-exclude-from-selection="true"]:has(div[id^="div-gpt-ad-desktop_song_lyrics_inread"])
+genius.com##div[class*="SectionLeaderboard__Container"]:has(div[id^="div-gpt-ad-desktop_song_about_leaderboard"])
+! gamingonlinux
+gamingonlinux.com##col-12.clearer.adsbygoogle
+! Krunker.io Fandom ad/video clutter
+krunkerio.fandom.com##.mve-floating
+krunkerio.fandom.com##.mve-floating--desktop
+krunkerio.fandom.com##.top-ads-container
+krunkerio.fandom.com##.bottom-ads-container
+krunkerio.fandom.com##.ad-slot-placeholder
+krunkerio.fandom.com##.gpt-ad
+krunkerio.fandom.com##.wikia-ad
+krunkerio.fandom.com##.right-rail-wrapper
+krunkerio.fandom.com##.page__right-rail
+krunkerio.fandom.com##.rail-module:has(.gpt-ad)
+krunkerio.fandom.com##cnx.cnx-main-container
+krunkerio.fandom.com##cnx[class*="cnx-main-container"]
+krunkerio.fandom.com##cnx[class*="cnx-content-wrapper"]
+krunkerio.fandom.com##.fandom-ad-wrapper
+krunkerio.fandom.com##[data-key="advertisement"]
+krunkerio.fandom.com##iframe[src*="stg.deck.amidstdeploy.com"]
+krunkerio.fandom.com##a[href*="stg.deck.amidstdeploy.com"]
+krunkerio.fandom.com##div:has(> iframe[src*="stg.deck.amidstdeploy.com"])
+krunkerio.fandom.com##div:has(> a[href*="stg.deck.amidstdeploy.com"])
+krunkerio.fandom.com##.sticky-placement-top
+krunkerio.fandom.com##.sticky-top:has([data-key="advertisement"])
+krunkerio.fandom.com##div[class*="sticky-top"]:has([data-key="advertisement"])
+! 9Now ad blocker playback warning toast
+9now.com.au##.Toastify__toast-container
+! News24 top ad container
+news24.com.au##.header_ads-container
+! News.com.au loader overlay
+news.com.au##.loader-box
+news.com.au##.loader-overlay
+! Pokemon Fandom featured video
+pokemon.fandom.com##.featured-video__wrapper
+pokemon.fandom.com##div[itemprop="video"]
+! Reddit - login overlay
+reddit.com##.scroll-lock[style*="position: fixed"]
+reddit.com##div[class*="overlay"][class*="transition-opacity"][class*="duration-"]
+reddit.com##div[class][class*="fixed inset-0"]
+reddit.com##shreddit-experience-tree[route-id="login"]
+reddit.com##faceplate-dialog
+reddit.com##.dialog-overlay
+reddit.com##.dialog-panel
+reddit.com##body:style(overflow: auto !important;)
+! Reddit - sponsored/promoted posts
+reddit.com##faceplate-tracker[noun="promoted"]
+reddit.com##div[data-testid="ad-slot"]
+reddit.com##.promotedlink
+reddit.com##shreddit-ad-post
+reddit.com##shreddit-comments-page-ad
+reddit.com##[slot="ad"]

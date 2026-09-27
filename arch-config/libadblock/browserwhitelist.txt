@@ -1,0 +1,16 @@
+[Adblock Plus 2.0]
+! Title: LibElectron Browser Navigation Whitelist
+! Source: https://gitlab.com/linuxbombay/libelectron/libadblock/filters/-/raw/main/browserwhitelist.txt
+! ===============================
+! ABP/uBO-compatible top-level navigation allow rules.
+! Rules use @@ and $document to allow main-frame navigations.
+! ===============================
+
+@@||next.frame.io^$document
+@@||api.frame.io^$document
+@@||assets.frame.io^$document
+@@||picture2.frame.io^$document
+@@||api.segment.io^$document
+@@||t.paypal.com^$document
+@@||eaglercraft.com^$document
+@@||cdn.eaglercraft.ru^$document
