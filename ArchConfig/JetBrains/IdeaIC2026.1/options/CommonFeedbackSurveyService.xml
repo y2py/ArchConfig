@@ -1,0 +1,7 @@
+<application>
+  <component name="CommonFeedbackSurveyService"><![CDATA[{
+  "feedbackSurveyToNumberNotificationShows": {
+    "csat_feedback": 1
+  }
+}]]></component>
+</application>

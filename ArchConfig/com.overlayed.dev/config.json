@@ -1,0 +1,9 @@
+{
+  "pin": false,
+  "horizontal": "left",
+  "vertical": "bottom",
+  "telemetry": true,
+  "joinHistoryNotifications": false,
+  "showOnlyTalkingUsers": false,
+  "showOwnUser": true
+}

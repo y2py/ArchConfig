@@ -1,0 +1,55 @@
+00:00:00.000245 main     VirtualBox XPCOM Server 7.2.18 r175117 linux.amd64 (Sep 15 2026 15:22:02) release log
+00:00:00.000248 main     Log opened 2026-09-26T01:08:26.166689000Z
+00:00:00.000248 main     Build Type: release
+00:00:00.000250 main     OS Product: Linux
+00:00:00.000250 main     OS Release: 6.18.53-1-lts
+00:00:00.000251 main     OS Version: #1 SMP PREEMPT_DYNAMIC Mon, 21 Sep 2026 14:42:53 +0000
+00:00:00.000270 main     DMI Product Name: GF63 Thin 11SC
+00:00:00.000280 main     DMI Product Version: REV:1.0
+00:00:00.000283 main     Firmware type: UEFI
+00:00:00.000478 main     Secure Boot: Disabled
+00:00:00.000504 main     Host RAM: 15687MB (15.3GB) total, 8859MB (8.6GB) available
+00:00:00.000506 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000506 main     Process ID: 5050
+00:00:00.000507 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.004532 main     IPC socket path: /tmp/.vbox-aws-ipc/ipcd
+00:00:00.007521 DCon01   VirtualBox: object creation starts
+00:00:00.007581 DCon01   Home directory: '/home/aws/.config/VirtualBox'
+00:00:00.007699 DCon01   Loading settings file "/home/aws/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.008952 DCon01   USB: Unknown USB device detected (idVendor: 0x8087, idProduct: 0x0026)
+00:00:00.009012 DCon01   Successfully initialised host USB using sysfs
+00:00:00.016408 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlo1: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.017639 DCon01   HostDnsMonitor: initializing
+00:00:00.017847 DCon01   NAT: resolv.conf: nameserver 127.0.0.53
+00:00:00.017850 DCon01   NAT: resolv.conf: ignoring "options edns0 trust-ad"
+00:00:00.017861 DCon01   HostDnsMonitor: updating information
+00:00:00.017866 DCon01   HostDnsMonitor: old information
+00:00:00.017867 DCon01     no server entries
+00:00:00.017868 DCon01     no domain set
+00:00:00.017869 DCon01     no search string entries
+00:00:00.017870 DCon01   HostDnsMonitor: new information
+00:00:00.017871 DCon01     server 1: 127.0.0.53
+00:00:00.017872 DCon01     domain: .
+00:00:00.017873 DCon01     search string 1: .
+00:00:00.019159 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.019854 DCon01   Platform architecture set to 'x86'
+00:00:00.020118 DCon01   Loading settings file "/run/media/aws/Lexar/badlifeSystems/goodlife/goodlife.vbox" with version "1.19-linux"
+00:00:00.020250 DCon01   Platform architecture set to 'x86'
+00:00:00.020735 DCon01   VirtualBox: object created
+00:00:00.023994 DCon01   Platform architecture set to 'x86'
+00:00:00.025107 DCon01   ERROR [COM]: aRC=VBOX_E_NOT_SUPPORTED (0x80bb0009) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={This VM is not encrypted}, preserve=false aResultDetail=0
+00:00:00.028033 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:00:00.031951 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={No storage device attached to device slot 1 on port 0 of controller 'IDE'}, preserve=false aResultDetail=0
+00:00:00.032062 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={No storage device attached to device slot 1 on port 0 of controller 'IDE'}, preserve=false aResultDetail=0
+00:00:00.032158 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={No storage device attached to device slot 0 on port 1 of controller 'IDE'}, preserve=false aResultDetail=0
+00:00:00.032249 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={No storage device attached to device slot 0 on port 1 of controller 'IDE'}, preserve=false aResultDetail=0
+00:00:00.032366 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={No storage device attached to device slot 1 on port 1 of controller 'IDE'}, preserve=false aResultDetail=0
+00:00:00.032477 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={No storage device attached to device slot 1 on port 1 of controller 'IDE'}, preserve=false aResultDetail=0
+00:00:00.038672 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={83cfdc66-4f20-4569-ad39-8722f7d472b3} aComponent={RecordingSettingsWrap} aText={Recording not started}, preserve=false aResultDetail=0
+00:00:00.039939 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={This machine does not have any snapshots}, preserve=false aResultDetail=0
+00:00:05.042085 main     VirtualBox: object deletion starts
+00:00:05.042127 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Medium '/run/media/aws/Lexar/badlifeSystems/goodlife/goodlife.vhd' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:05.042588 main     HostDnsMonitor: shutting down ...
+00:00:05.042878 main     HostDnsMonitor: shut down
+00:00:05.057378 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={2ce10519-3c09-45d8-a12d-e887786146b7} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:05.057457 main     VirtualBox: object deleted

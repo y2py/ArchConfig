@@ -1,0 +1,101 @@
+{
+ "Week": "2026-08-26",
+ "LastWeek": "",
+ "X": 0.5486006082936725,
+ "Programs": [
+  {
+   "Program": "cmd/asm",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "asm/flag:D": 84,
+    "asm/flag:I": 84,
+    "asm/flag:gensymabis": 30,
+    "asm/flag:o": 84,
+    "asm/flag:p": 84,
+    "asm/flag:trimpath": 84,
+    "asm/invocations": 84
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/compile",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "compile/flag:asmhdr": 30,
+    "compile/flag:buildid": 208,
+    "compile/flag:c": 208,
+    "compile/flag:complete": 171,
+    "compile/flag:goversion": 208,
+    "compile/flag:importcfg": 208,
+    "compile/flag:lang": 208,
+    "compile/flag:nolocalimports": 208,
+    "compile/flag:o": 208,
+    "compile/flag:p": 208,
+    "compile/flag:pack": 208,
+    "compile/flag:std": 192,
+    "compile/flag:symabis": 30,
+    "compile/flag:trimpath": 208,
+    "compile/invocations": 212
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/go",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "go/build/flag/buildmode:pie": 1,
+    "go/build/flag:buildmode": 1,
+    "go/build/flag:buildvcs": 1,
+    "go/build/flag:ldflags": 5,
+    "go/build/flag:mod": 1,
+    "go/build/flag:modcacherw": 1,
+    "go/build/flag:o": 5,
+    "go/build/flag:trimpath": 1,
+    "go/buildcache/hit": 580,
+    "go/buildcache/miss": 212,
+    "go/buildcache/stdlib-recompiled": 2,
+    "go/cgo:disabled": 4,
+    "go/cgo:enabled": 1,
+    "go/goexperiment:nodwarf5": 5,
+    "go/goroot:usr-lib-go": 5,
+    "go/invocations": 5,
+    "go/mode:module": 5,
+    "go/platform/host/linux/major-version:6": 5,
+    "go/platform/host/linux/version:6-18": 5,
+    "go/platform/target/goamd64:v1": 5,
+    "go/platform/target/goarch:amd64": 5,
+    "go/platform/target/goos:linux": 1,
+    "go/platform/target/goos:windows": 4,
+    "go/subcommand:build": 5
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/link",
+   "Version": "devel",
+   "GoVersion": "devel",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "link/flag:X": 4,
+    "link/flag:buildid": 4,
+    "link/flag:buildmode": 4,
+    "link/flag:extld": 4,
+    "link/flag:importcfg": 4,
+    "link/flag:o": 4,
+    "link/invocations": 8
+   },
+   "Stacks": {}
+  }
+ ],
+ "Config": "v0.0.0-0"
+}

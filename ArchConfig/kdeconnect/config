@@ -1,0 +1,6 @@
+[General]
+keyAlgorithm=EC
+name=awsarchlaptop
+
+[Share]
+chooseDirectoryCommand=thunar %f

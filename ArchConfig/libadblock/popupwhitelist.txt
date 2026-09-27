@@ -1,0 +1,27 @@
+[Adblock Plus 2.0]
+! Title: LibElectron Popup Whitelist
+! Source: https://gitlab.com/linuxbombay/libelectron/libadblock/filters/-/raw/main/popupwhitelist.txt
+! ABP/uBO-compatible popup allow rules for trusted auth/payment hosts.
+@@||accounts.google.com^$popup
+@@||pay.google.com^$popup
+@@||payments.google.com^$popup
+@@||login.microsoftonline.com^$popup
+@@||appleid.apple.com^$popup
+@@||paypal.com^$popup
+@@||paypalobjects.com^$popup
+@@||google.com^$popup
+@@||googleapis.com^$popup
+@@||gstatic.com^$popup
+@@||apple.com^$popup
+@@||apple-pay-gateway.apple.com^$popup
+@@||stripe.com^$popup
+@@||stripe.network^$popup
+@@||checkout.com^$popup
+@@||adyen.com^$popup
+@@||adyenpayments.com^$popup
+@@||klarna.com^$popup
+@@||afterpay.com^$popup
+@@||affirm.com^$popup
+@@||squareup.com^$popup
+@@||cash.app^$popup
+@@||checkout.link.com^$popup

@@ -1,0 +1,21 @@
+INFO - discover_overlay.discover_overlay - Starting Discover Overlay: 0.7.8
+INFO - discover_overlay.discord_connector - Connecting...
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - PIL.Image - Importing PngImagePlugin
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - discover_overlay.overlay - Already awaiting paint
+DEBUG - PIL.PngImagePlugin - STREAM b'IHDR' 16 13
+DEBUG - PIL.PngImagePlugin - STREAM b'pHYs' 41 9
+DEBUG - PIL.PngImagePlugin - STREAM b'tEXt' 62 25
+DEBUG - PIL.PngImagePlugin - STREAM b'IDAT' 99 4965

@@ -1,0 +1,3 @@
+com.google.tools.ij.aiplugin
+com.intellij.mcpServer
+com.sburlyaev.terminal.plugin
