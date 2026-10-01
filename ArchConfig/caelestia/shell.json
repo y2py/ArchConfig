@@ -1,0 +1,157 @@
+{
+    "appearance": {
+        "transparency": {
+            "base": 0.75,
+            "enabled": true
+        }
+    },
+    "background": {
+        "desktopClock": {
+            "background": {
+                "opacity": 0.6993033619133575
+            },
+            "enabled": true,
+            "position": "top-center",
+            "shadow": {
+                "opacity": 0.7077434002707582
+            }
+        },
+        "enabled": true,
+        "visualiser": {
+            "enabled": true,
+            "rounding": 1,
+            "spacing": 0.9770320325542571
+        },
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": false,
+            "inverted": false
+        },
+        "clock": {
+            "background": true,
+            "showDate": true,
+            "showIcon": true
+        },
+        "dragThreshold": 15,
+        "excludedScreens": [
+        ],
+        "persistent": true,
+        "scrollActions": {
+            "brightness": false,
+            "volume": false,
+            "workspaces": true
+        },
+        "showOnHover": false,
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "pomodoro"
+            },
+            {
+                "enabled": true,
+                "id": "audio"
+            },
+            {
+                "enabled": true,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": true,
+                "id": "microphone"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "battery"
+            },
+            {
+                "enabled": true,
+                "id": "lockStatus"
+            }
+        ],
+        "tray": {
+            "background": false,
+            "compact": false,
+            "recolour": false
+        },
+        "workspaces": {
+            "activeIndicator": true,
+            "activeTrail": false,
+            "maxWindowIcons": 5,
+            "occupiedBg": true,
+            "showWindows": true,
+            "showWindowsOnSpecialWorkspaces": true,
+            "shown": 5
+        }
+    },
+    "dashboard": {
+        "enabled": true,
+        "showDashboard": true,
+        "showOnHover": true
+    },
+    "general": {
+        "apps": {
+            "terminal": [
+                "kitty"
+            ]
+        },
+        "showOverFullscreen": true
+    },
+    "launcher": {
+        "enableDangerousActions": false,
+        "enabled": true,
+        "maxShown": 5,
+        "showOnHover": false,
+        "useFuzzy": {
+            "actions": true,
+            "apps": false,
+            "schemes": true,
+            "variants": true,
+            "wallpapers": true
+        },
+        "vimKeybinds": false
+    },
+    "notifs": {
+        "openExpanded": false
+    },
+    "services": {
+        "gpuType": "NVIDIA",
+        "useFahrenheit": false,
+        "visualiserBars": 60
+    },
+    "session": {
+        "commands": {
+            "logout": [
+                "hyprctl",
+                "dispatch",
+                "hl.dsp.exit()"
+            ]
+        }
+    },
+    "sidebar": {
+        "dragThreshold": 80,
+        "enabled": true
+    },
+    "utilities": {
+        "enabled": true,
+        "maxToasts": 2,
+        "toasts": {
+            "fullscreen": "all",
+            "nowPlaying": true
+        },
+        "vpn": {
+            "provider": [
+            ],
+            "selectedProvider": ""
+        }
+    }
+}

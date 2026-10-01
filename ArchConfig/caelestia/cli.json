@@ -1,0 +1,12 @@
+{
+  "toggles": {
+    "communication": {
+      "discord": {
+        "enable": true,
+        "match": [{ "class": "discord" }],
+        "command": ["prime-run", "discord", "--force_high_performance_gpu", "--ozone-platform=wayland"],
+        "move": true
+      }
+    }
+  }
+}
