@@ -4,7 +4,14 @@
       "discord": {
         "enable": true,
         "match": [{ "class": "discord" }],
-        "command": ["prime-run", "discord", "--force_high_performance_gpu", "--ozone-platform=wayland"],
+"command": [
+  "prime-run",
+  "discord",
+  "--force_high_performance_gpu",
+  "--ozone-platform=wayland",
+  "--disable-renderer-backgrounding",
+  "--disable-background-timer-throttling"
+],
         "move": true
       }
     }

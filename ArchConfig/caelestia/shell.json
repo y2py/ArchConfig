@@ -107,7 +107,7 @@
         "showOverFullscreen": true
     },
     "launcher": {
-        "enableDangerousActions": false,
+        "enableDangerousActions": true,
         "enabled": true,
         "maxShown": 5,
         "showOnHover": false,
@@ -118,7 +118,7 @@
             "variants": true,
             "wallpapers": true
         },
-        "vimKeybinds": false
+        "vimKeybinds": true
     },
     "notifs": {
         "openExpanded": false

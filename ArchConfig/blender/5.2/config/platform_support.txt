@@ -1,2 +1,0 @@
-{Intel/Mesa Intel(R) UHD Graphics (TGL GT1)/4.6 (Core Profile) Mesa 26.2.1-arch1.1}=SUPPORTED
-{NVIDIA Corporation/NVIDIA GeForce GTX 1650 with Max-Q Design/PCIe/SSE2/4.6.0 NVIDIA 580.119.02}=SUPPORTED
