@@ -241,6 +241,7 @@ create_bind(vars.toggle_isw, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_isw
 create_bind(vars.toggle_autoclicker, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_autoclicker.sh"))
 create_bind(vars.i_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/terminal/change_opacity.sh increase"))
 create_bind(vars.d_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/terminal/change_opacity.sh decrease"))
+create_bind(vars.switch_shell, hl.dsp.exec_cmd("bash ~/.config/hypr/hyprland/extra/ShellController/switch_shell.sh"))
 
 --i added pass through
 hl.bind("SUPER + Escape", function()
@@ -285,3 +286,47 @@ create_bind(
 			.. " -a 'Shell' -A 'Test1=I got it!' -A 'Test2=Another action'"
 	)
 )
+
+-- HARD CODING
+
+local function create_serpantinum_bind(keybind, command)
+	create_bind(
+		keybind,
+		hl.dsp.exec_cmd(
+			[[if [ "$(bash ~/.config/hypr/hyprland/extra/ShellController/get_shell.sh)" = "serpantinum" ]; then ]]
+				.. command
+				.. [[; fi]]
+		)
+	)
+end
+create_serpantinum_bind("SUPER + SUPER_L", "serpantinum msg toggle launcher", release)
+create_serpantinum_bind("SUPER + W", "serpantinum msg toggle wallpaper")
+create_serpantinum_bind("SUPER + Y", "serpantinum msg toggle system")
+create_serpantinum_bind("SUPER + N", "serpantinum msg toggle network")
+create_serpantinum_bind("SUPER + G", "serpantinum msg toggle volume")
+create_serpantinum_bind("SUPER + R", "serpantinum msg toggle music")
+create_serpantinum_bind("SUPER + L", "serpantinum lock")
+create_serpantinum_bind("SUPER + CTRL + S ", "serpantinum msg toggle guide")
+
+-- Serpantinum media controls
+
+local function create_serpantinum_media_bind(keybinds, command, flags)
+	create_bind(
+		keybinds,
+		hl.dsp.exec_cmd(
+			[[if [ "$(bash ~/.config/hypr/hyprland/extra/ShellController/get_shell.sh)" = "serpantinum" ]; then ]]
+				.. command
+				.. [[; fi]]
+		),
+		flags
+	)
+end
+
+create_serpantinum_media_bind(
+	{ vars.kbMediaToggle, "XF86AudioPlay", "XF86AudioPause" },
+	"playerctl --all-players play-pause",
+	locked
+)
+create_serpantinum_media_bind({ vars.kbMediaNext, "XF86AudioNext" }, "playerctl next", locked)
+create_serpantinum_media_bind({ vars.kbMediaPrev, "XF86AudioPrev" }, "playerctl previous", locked)
+create_serpantinum_media_bind({ vars.kbMediaStop, "XF86AudioStop" }, "playerctl stop", locked)
