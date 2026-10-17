@@ -42,7 +42,7 @@ if status is-interactive
     alias pomo='~/go/bin/pomo'
     alias rain='terminal-rain'
     alias cls='clear'
-    alias python='/home/aws/venv/bin/python'
+    alias python='~/venv/bin/python'
 
     function enable_3D
         hyprpm enable hypr3d
@@ -53,11 +53,11 @@ if status is-interactive
     end
 
     function vencord-update
-        vencordinstallercli -install -location /home/aws/.config/discord/app*
+        vencordinstallercli -install -location ~/.config/discord/app*
     end
 
     function convert_mp4
-        bash /home/aws/.config/hypr/hyprland/mp4_fixer.sh $argv
+        bash ~/.config/hypr/hyprland/mp4_fixer.sh $argv
     end
 
     # Custom fish config
@@ -66,4 +66,4 @@ if status is-interactive
 end
 
 # Created by `pipx` on 2026-07-29 00:16:53
-set PATH $PATH /home/aws/.local/bin
+set PATH $PATH ~/.local/bin
