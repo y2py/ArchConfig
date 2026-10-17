@@ -38,9 +38,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 1")
     hl.exec_cmd("discover-overlay")
     hl.exec_cmd("systemctl --user enable opentabletdriver.service --now")
-    hl.exec_cmd("/home/aws/.config/AwsScripts/disks/mount-usb.sh")
-    hl.exec_cmd("/home/aws/.config/hypr/hyprland/idlescripts/restore-idle-state.sh")
-    hl.exec_cmd("/home/aws/.config/hypr/hyprland/force_dark_mode.sh")
+    hl.exec_cmd("~/.config/hypr/hyprland/idlescripts/restore-idle-state.sh")
+    hl.exec_cmd("~/.config/hypr/hyprland/force_dark_mode.sh")
 end)
 
 -- Resizer listeners
