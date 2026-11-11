@@ -150,7 +150,7 @@ return {
 	switch_shell = "SUPER + H",
 	i_opacity = "ALT + Page_Up",
 	d_opacity = "ALT + Page_Down",
-
+	kb_zoom = "SUPER + TAB",
 	toggle_isw = "SUPER + O",
 	toggle_autoclicker = "ALT + G",
 

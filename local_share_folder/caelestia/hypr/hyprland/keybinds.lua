@@ -119,7 +119,7 @@ create_bind(vars.kbWindowGroupCycleNext, hl.dsp.group.next(), repeating)
 create_bind(vars.kbWindowGroupCyclePrev, hl.dsp.group.prev(), repeating)
 create_bind(vars.kbToggleGroup, hl.dsp.group.toggle())
 create_bind(vars.kbUngroup, hl.dsp.window.move({ out_of_group = true }))
-create_bind(vars.kbGroupLockActive, hl.dsp.group.lock_active())
+create_bind(vars.kbGroupLockActive, hl.dsp.group.lock())
 
 -- Window actions
 for _, dir in ipairs({ "left", "right", "up", "down" }) do
@@ -236,13 +236,13 @@ create_bind(
 
 create_bind(vars.flameshot, hl.dsp.exec_cmd("flameshot gui"))
 create_bind(vars.toggle_shutdown, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_shutdown_menu.sh"))
-create_true_bind(vars.toggle_mic, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/MouseMicController/toggle_mic.sh"))
-create_bind(vars.toggle_isw, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_isw.sh"))
+-- create_true_bind(vars.toggle_mic, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/MouseMicController/toggle_mic.sh"))
+-- create_bind(vars.toggle_isw, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_isw.sh"))
 create_bind(vars.toggle_autoclicker, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_autoclicker.sh"))
 create_bind(vars.i_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/terminal/change_opacity.sh increase"))
 create_bind(vars.d_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/terminal/change_opacity.sh decrease"))
+create_bind(vars.kb_zoom, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/ZoomController/Toggle_Zoom.sh 2"))
 create_bind(vars.switch_shell, hl.dsp.exec_cmd("bash ~/.config/hypr/hyprland/extra/ShellController/switch_shell.sh"))
-
 --i added pass through
 hl.bind("SUPER + Escape", function()
 	hl.dispatch(hl.dsp.submap("passthrough"))
@@ -288,18 +288,19 @@ create_bind(
 )
 
 -- HARD CODING
-
-local function create_serpantinum_bind(keybind, command)
+local function create_serpantinum_bind(keybind, command, flags)
 	create_bind(
 		keybind,
 		hl.dsp.exec_cmd(
 			[[if [ "$(bash ~/.config/hypr/hyprland/extra/ShellController/get_shell.sh)" = "serpantinum" ]; then ]]
 				.. command
 				.. [[; fi]]
-		)
+		),
+		flags
 	)
 end
-create_serpantinum_bind("SUPER + SUPER_L", "serpantinum msg toggle launcher", release)
+
+create_serpantinum_bind("Super_L", "serpantinum msg toggle launcher", release)
 create_serpantinum_bind("SUPER + W", "serpantinum msg toggle wallpaper")
 create_serpantinum_bind("SUPER + Y", "serpantinum msg toggle system")
 create_serpantinum_bind("SUPER + N", "serpantinum msg toggle network")
@@ -322,11 +323,7 @@ local function create_serpantinum_media_bind(keybinds, command, flags)
 	)
 end
 
-create_serpantinum_media_bind(
-	{ vars.kbMediaToggle, "XF86AudioPlay", "XF86AudioPause" },
-	"playerctl --all-players play-pause",
-	locked
-)
+create_serpantinum_media_bind({ vars.kbMediaToggle, "XF86AudioPlay", "XF86AudioPause" }, "playerctl play-pause", locked)
 create_serpantinum_media_bind({ vars.kbMediaNext, "XF86AudioNext" }, "playerctl next", locked)
 create_serpantinum_media_bind({ vars.kbMediaPrev, "XF86AudioPrev" }, "playerctl previous", locked)
 create_serpantinum_media_bind({ vars.kbMediaStop, "XF86AudioStop" }, "playerctl stop", locked)
