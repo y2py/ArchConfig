@@ -153,6 +153,7 @@ return {
 	kb_zoom = "SUPER + TAB",
 	toggle_isw = "SUPER + O",
 	toggle_autoclicker = "ALT + G",
+	wallpaper = "SUPER + W",
 
 	-- Clipboard and emoji picker
 	kbClipboard = "SUPER + V",

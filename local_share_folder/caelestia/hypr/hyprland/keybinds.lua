@@ -233,11 +233,11 @@ create_bind(
 )
 
 --Aws
-
+create_bind(vars.wallpaper, hl.dsp.exec_cmd("skwd-wall-v2"))
 create_bind(vars.flameshot, hl.dsp.exec_cmd("flameshot gui"))
 create_bind(vars.toggle_shutdown, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_shutdown_menu.sh"))
--- create_true_bind(vars.toggle_mic, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/MouseMicController/toggle_mic.sh"))
--- create_bind(vars.toggle_isw, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_isw.sh"))
+create_true_bind(vars.toggle_mic, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/MouseMicController/toggle_mic.sh"))
+create_bind(vars.toggle_isw, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_isw.sh"))
 create_bind(vars.toggle_autoclicker, hl.dsp.exec_cmd("~/.config/hypr/hyprland/toggle_autoclicker.sh"))
 create_bind(vars.i_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/terminal/change_opacity.sh increase"))
 create_bind(vars.d_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/terminal/change_opacity.sh decrease"))
@@ -301,7 +301,7 @@ local function create_serpantinum_bind(keybind, command, flags)
 end
 
 create_serpantinum_bind("Super_L", "serpantinum msg toggle launcher", release)
-create_serpantinum_bind("SUPER + W", "serpantinum msg toggle wallpaper")
+--create_serpantinum_bind("SUPER + W", "serpantinum msg toggle wallpaper")
 create_serpantinum_bind("SUPER + Y", "serpantinum msg toggle system")
 create_serpantinum_bind("SUPER + N", "serpantinum msg toggle network")
 create_serpantinum_bind("SUPER + G", "serpantinum msg toggle volume")

@@ -39,18 +39,19 @@ serpantinum)
 
   sleep 2
   serpantinumd stop >/dev/null 2>&1
+  systemctl --user stop playerctld.service
   sleep 3
   ;;
 
 caelestia)
   bash "$notify_sender" "Switching to Serpantinum..!" &
   pw-play "$SOUNDS/on.mp3"
-
   serpantinumd start >/dev/null 2>&1 &
   disown
 
   sleep 3
   caelestia shell -k >/dev/null 2>&1
+  systemctl --user start playerctld.service
   sleep 2
   ;;
 
