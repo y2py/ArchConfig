@@ -243,8 +243,9 @@ create_bind(vars.i_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/termi
 create_bind(vars.d_opacity, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/terminal/change_opacity.sh decrease"))
 create_bind(vars.kb_zoom, hl.dsp.exec_cmd("~/.config/hypr/hyprland/extra/ZoomController/Toggle_Zoom.sh 2"))
 create_bind(vars.switch_shell, hl.dsp.exec_cmd("bash ~/.config/hypr/hyprland/extra/ShellController/switch_shell.sh"))
+create_bind(vars.toggle_overlay, hl.dsp.exec_cmd("pkill -USR1 -f mic_overlay.py"))
 --i added pass through
-hl.bind("SUPER + Escape", function()
+create_bind(vars.toggle_passthrough, function()
 	hl.dispatch(hl.dsp.submap("passthrough"))
 	hl.dispatch(hl.dsp.exec_cmd('hyprctl notify 0 3000 "rgb(e6b800)" "fontsize:18 Keyboard Frozen"'))
 end)
@@ -258,24 +259,14 @@ end)
 
 -- i added discord defean control
 hl.bind(
-	"Pause",
+	"Scroll_Lock",
 	hl.dsp.send_shortcut({
 		mods = "CTRL SHIFT",
 		key = "D",
 		window = "class:^(discord)$",
 	})
 )
-
-hl.bind(
-	"Scroll_Lock",
-	hl.dsp.send_shortcut({
-		mods = "CTRL SHIFT",
-		key = "M",
-		window = "class:^(discord)$",
-	})
-)
-
-create_bind("ALT + F12", hl.dsp.exec_cmd("hyprctl eval 'hl.plugin.hypr3d.toggle()'"))
+create_bind(vars.toggle_hypr3d, hl.dsp.exec_cmd("hyprctl eval 'hl.plugin.hypr3d.toggle()'"))
 
 -- Testing
 create_bind(
@@ -302,12 +293,12 @@ end
 
 create_serpantinum_bind("Super_L", "serpantinum msg toggle launcher", release)
 --create_serpantinum_bind("SUPER + W", "serpantinum msg toggle wallpaper")
-create_serpantinum_bind("SUPER + Y", "serpantinum msg toggle system")
-create_serpantinum_bind("SUPER + N", "serpantinum msg toggle network")
-create_serpantinum_bind("SUPER + G", "serpantinum msg toggle volume")
-create_serpantinum_bind("SUPER + R", "serpantinum msg toggle music")
-create_serpantinum_bind("SUPER + L", "serpantinum lock")
-create_serpantinum_bind("SUPER + CTRL + S ", "serpantinum msg toggle guide")
+create_serpantinum_bind(vars.serp_system, "serpantinum msg toggle system")
+create_serpantinum_bind(vars.serp_network, "serpantinum msg toggle network")
+create_serpantinum_bind(vars.serp_volume, "serpantinum msg toggle volume")
+create_serpantinum_bind(vars.serp_music, "serpantinum msg toggle music")
+create_serpantinum_bind(vars.serp_lock, "serpantinum lock")
+create_serpantinum_bind(vars.serp_settings, "serpantinum msg toggle guide")
 
 -- Serpantinum media controls
 

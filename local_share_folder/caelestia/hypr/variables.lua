@@ -146,18 +146,29 @@ return {
 	-- Aws
 	flameshot = "CTRL + semicolon",
 	toggle_shutdown = "SUPER + CTRL + SHIFT + Delete",
-	toggle_mic = "XF86Tools",
-	switch_shell = "SUPER + H",
+	--toggle_mic = "XF86Tools",
+	kb_zoom = "SUPER + TAB",
+	toggle_mic = "Pause",
+	toggle_overlay = "ALT + O",
 	i_opacity = "ALT + Page_Up",
 	d_opacity = "ALT + Page_Down",
-	kb_zoom = "SUPER + TAB",
 	toggle_isw = "SUPER + O",
 	toggle_autoclicker = "ALT + G",
+	toggle_passthrough = "SUPER + Escape",
+	toggle_hypr3d = "ALT + F12",
+	switch_shell = "SUPER + H",
 	wallpaper = "SUPER + W",
-
 	-- Clipboard and emoji picker
 	kbClipboard = "SUPER + V",
 	kbClipboardDel = "SUPER + ALT + V",
 	kbClipboardPasteLatest = "CTRL + SHIFT + ALT + V",
 	kbEmoji = "SUPER + Period",
+
+	-- SERPANTINUM:
+	serp_lock = "SUPER + L",
+	serp_system = "SUPER + Y",
+	serp_network = "SUPER + N",
+	serp_volume = "SUPER + G",
+	serp_music = "SUPER + R",
+	serp_settings = "SUPER + CTRL + S",
 }

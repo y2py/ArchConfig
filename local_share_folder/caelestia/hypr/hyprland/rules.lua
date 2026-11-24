@@ -208,7 +208,7 @@ hl.layer_rule({ match = { namespace = "caelestia-(border-exclusion|area-picker)"
 hl.layer_rule({ match = { namespace = "caelestia-(drawers|background)" }, animation = "fade" })
 
 -- VSCodium Custom Transparency
-hl.window_rule({ match = { class = "codium" }, opacity = ".60 override" })
-hl.window_rule({ match = { class = "VSCodium" }, opacity = ".60 override" })
+hl.window_rule({ match = { class = "codium" }, opacity = ".75 override" })
+hl.window_rule({ match = { class = "VSCodium" }, opacity = ".75 override" })
 
 --vbox

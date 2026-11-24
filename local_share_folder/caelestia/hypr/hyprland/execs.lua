@@ -26,20 +26,21 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("mpris-proxy")
 
 	-- Start shell
-	hl.exec_cmd("caelestia shell -d")
+	hl.exec_cmd("~/.config/hypr/hyprland/run_caelestia.sh")
 
 	-- aws
 
 	hl.exec_cmd("kdeconnectd")
-	--hl.exec_cmd("sudo isw -b on")
 	hl.exec_cmd("vencord-update")
-	hl.exec_cmd("gloriousctl --set-effect single --set-colors FF0000 --set-brightness 4")
-	hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 1")
 	hl.exec_cmd("discover-overlay")
+	-- Only Aws:
+	--hl.exec_cmd("sudo isw -b on")
 	hl.exec_cmd("systemctl --user enable opentabletdriver.service --now")
 	hl.exec_cmd("~/.config/AwsScripts/disks/mount-usb.sh")
+
 	hl.exec_cmd("~/.config/hypr/hyprland/idlescripts/restore-idle-state.sh")
 	hl.exec_cmd("~/.config/hypr/hyprland/force_dark_mode.sh")
+	hl.exec_cmd("~/.config/hypr/hyprland/mic_overlay.py --size 15 --opacity 0.7")
 end)
 
 -- Resizer listeners
